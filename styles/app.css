@@ -41,6 +41,9 @@ li {
 .d-flex {
   display: flex;
 }
+.d-none{
+  display: none;
+}
 .flex-column {
   flex-direction: column;
 }
@@ -94,6 +97,7 @@ li {
 .nav-logo .menu{
   padding: 10px 30px;
   font-size:14px;
+  display: none;
 }
 .nav-item {
   margin-right: 10px;
@@ -238,13 +242,12 @@ li {
   .nav{
     display: block;
   }
-  .nav-links{
-    display: none;
-    padding-top: 20px;
-  }
   .nav-links a{
     padding: 20px 0;
     display: block;
+  }
+  .nav-logo .menu{
+    display: inline;
   }
 
   /* CONTACT ME */
