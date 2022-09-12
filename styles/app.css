@@ -180,7 +180,7 @@ li {
   font-size: 48px;
 }
 .contact-me > form {
-  width: 700px;
+  max-width: 700px;
 }
 .contact-me .input {
   height: 88px;
@@ -192,14 +192,14 @@ li {
 /* MAIN FOOTER */
 .footer {
   color: white;
-  height: 250px;
+  min-height: 250px;
   padding: 0 12%;
   justify-content: space-between;
   align-items: center;
   line-height: 2em;
 }
 .footer > .part {
-  height: 50%;
+  min-height: 50%;
   justify-content: space-around;
   text-align: center;
   width: 60%;
@@ -219,4 +219,29 @@ li {
   background-color: #1a252f;
   justify-content: center;
   align-items: center;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1000px) {
+  /* NAVBAR */
+  .nav-links{
+    display: none;
+  }
+
+  /* CONTACT ME */
+  .contact-me form{
+    width: 80%;
+  }
+
+  /* FOOTER REPSONSIVITY */
+  .footer{
+    flex-direction: column;
+  }
+  .footer > .part {
+    margin-top: 10px;
+    width:100%;
+    flex-basis: 100%;
+    text-align: center;
+    text-align: center;
+  }
 }
