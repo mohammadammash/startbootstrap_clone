@@ -16,6 +16,22 @@ li {
 }
 
 /* UTILITIES */
+.star {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.star > .icon {
+  margin: 0 16px;
+}
+.line {
+  display: inline-block;
+  width: 100%;
+  max-width: 7rem;
+  height: 0.25rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+}
 .bold {
   font-weight: bold;
 }
@@ -31,8 +47,16 @@ li {
 .white-text {
   color: #fff;
 }
+.dark-grey-text{
+    color: #2c3e50;
+}
+.dark-grey-bg{
+    background-color: #2c3e50;
+}
+
 
 /* SECTIONS */
+
 /* NAVBAR */
 .nav {
   height: 10vh;
@@ -68,20 +92,30 @@ li {
 .hero > .list {
   font-size: 20px;
 }
-.star {
-  width:100%;
-  text-align: center;
-  margin-bottom: 35px;
-}
-.star > .icon{
-  margin: 0 16px;
-}
-.line {
-  display: inline-block;
-  width: 100%;
-  max-width: 7rem;
-  height: 0.25rem;
-  background-color: #ffffff;
-  border-radius: 1rem;
-}
 
+/* PORTFOLIO */
+.portfolio {
+  justify-content: center;
+  min-height: 900px;
+}
+.portfolio > .header {
+  height:20%;
+  justify-content: flex-end;
+  align-items: center;
+  gap:2em;
+}
+.portfolio h1{
+    font-size: 48px;
+}
+.portfolio > .content {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3em;
+  align-content: space-between;
+  margin: 0 5%;
+}
+.portfolio .content > .img {
+  min-width: 28%;
+  height: 280px;
+  border-radius: 10px;
+}
