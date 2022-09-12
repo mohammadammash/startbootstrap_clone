@@ -68,6 +68,7 @@ li {
 .btn:hover {
   background-color: #eeeeee;
   color: #1abc9c;
+  cursor: pointer;
 }
 .outline {
   border: none;
