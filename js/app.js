@@ -5,6 +5,7 @@ const fullname_input = document.getElementById("full-name");
 const phonenb_input = document.getElementById("phone-nb");
 const message_input = document.getElementById("message");
 const submitBtn = document.getElementById("contact-btn");
+const error_box = document.getElementById('error-box'); 
 
 // show nav-links
 const show_navbar = () => {
@@ -23,7 +24,6 @@ const validatePhoneNb = (phoneNb) => {
   if (phoneNb.length < 11) return false;
   const keyNbs = phoneNb.slice(4, 6);
   const countrycode = phoneNb.slice(0, 4);
-  console.log(keyNbs, countrycode);
   let valid = false;
   if (countrycode == "+961") {
     if (phoneNb.slice(4,5) == "3" && phoneNb.slice(5).length == "6") valid = true;
@@ -54,7 +54,10 @@ const handleContactSubmit = (e) => {
   let message = message_input.value;
   let phoneNb = phonenb_input.value;
   const error_msg = validateInput(fullName, email, message, phoneNb);
-  console.log(error_msg);
+  if (error_msg){
+    error_box.classList.remove('d-none');
+    error_box.textContent = error_msg;
+  }
 };
 
 // when click the nav-menu button on responsive design => show navbar links as block elements
