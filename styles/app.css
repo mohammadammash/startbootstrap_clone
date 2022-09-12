@@ -79,13 +79,21 @@ li {
 /* SECTIONS */
 /* NAVBAR */
 .nav {
-  height: 10vh;
+  min-height: 10vh;
   justify-content: space-between;
   align-items: center;
   padding: 0 7%;
 }
 .nav-logo {
   font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10vh;
+}
+.nav-logo .menu{
+  padding: 10px 30px;
+  font-size:14px;
 }
 .nav-item {
   margin-right: 10px;
@@ -223,11 +231,20 @@ li {
   align-items: center;
 }
 
+
 /* MEDIA QUERIES */
 @media only screen and (max-width: 1000px) {
   /* NAVBAR */
+  .nav{
+    display: block;
+  }
   .nav-links{
     display: none;
+    padding-top: 20px;
+  }
+  .nav-links a{
+    padding: 20px 0;
+    display: block;
   }
 
   /* CONTACT ME */
