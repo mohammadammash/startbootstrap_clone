@@ -8,21 +8,30 @@
     <link rel="stylesheet" href="styles/app.css" />
   </head>
   <body>
+    <!-- Start of Navbar -->
     <nav class="nav upper bold d-flex white-text dark-grey-bg">
-      <p class="nav-logo">start bootstrap</p>
-      <ul class="nav-links">
+      <p class="nav-logo">
+        start bootstrap<span id="nav-btn" class="menu upper green-bg btn"
+          >menu</span
+        >
+      </p>
+      <ul class="nav-links" id="nav-links">
         <a href="#" class="nav-item"><li>portfolio</li></a>
         <a href="#" class="nav-item"><li>about</li></a>
         <a href="#" class="nav-item"><li>contact</li></a>
       </ul>
     </nav>
+    <!-- End of Navbar -->
 
+    <!-- Start of Her Section -->
     <section class="hero white-text d-flex flex-column green-bg">
       <img src="./styles/images/avatar.svg" alt="img" />
       <h1 class="upper title">start bootstrap</h1>
       <div class="star">
         <div class="line"></div>
-        <span class="icon"><img src="./styles/images/icons/icons8-star-64.png"></span>
+        <span class="icon"
+          ><img src="./styles/images/icons/icons8-star-64.png"
+        /></span>
         <div class="line"></div>
       </div>
       <ul class="list">
@@ -31,31 +40,51 @@
         <li>Illustrator</li>
       </ul>
     </section>
+    <!-- End Of Hero section -->
 
+    <!-- Start of Portfolio Section -->
     <section class="portfolio d-flex flex-column">
       <div class="header d-flex flex-column dark-grey-text">
         <h1 class="bold upper">portfolio</h1>
         <div class="star">
           <div class="line dark-grey-bg"></div>
-          <span class="icon">ST</span>
+          <span class="icon"
+            ><img src="/styles/images/icons/icons8-star-64 (1).png"
+          /></span>
           <div class="line dark-grey-bg"></div>
         </div>
       </div>
       <div class="content d-flex">
-        <img class="img" src="./styles/images/cabin.png" />
-        <img class="img" src="./styles/images/cake.png" />
-        <img class="img" src="./styles/images/circus.png" />
-        <img class="img" src="./styles/images/game.png" />
-        <img class="img" src="./styles/images/safe.png" />
-        <img class="img" src="./styles/images/submarine.png" />
+        <div class="card">
+          <img class="img" src="./styles/images/cabin.png" />
+        </div>
+        <div class="card">
+          <img class="img" src="./styles/images/cake.png" />
+        </div>
+        <div class="card">
+          <img class="img" src="./styles/images/circus.png" />
+        </div>
+        <div class="card">
+          <img class="img" src="./styles/images/game.png" />
+        </div>
+        <div class="card">
+          <img class="img" src="./styles/images/safe.png" />
+        </div>
+        <div class="card">
+          <img class="img" src="./styles/images/submarine.png" />
+        </div>
       </div>
     </section>
+    <!-- End of Portfolio Section -->
 
+    <!-- Start of About Section -->
     <section class="about green-bg d-flex flex-column">
       <h2 class="title upper">about</h2>
       <div class="star">
         <span class="line"></span>
-        <span class="icon"><img src="./styles/images/icons/icons8-star-64.png"></span>
+        <span class="icon"
+          ><img src="./styles/images/icons/icons8-star-64.png"
+        /></span>
         <span class="line"></span>
       </div>
       <div class="content d-flex">
@@ -75,28 +104,36 @@
         <span class="icon">D</span>Free Download!
       </button>
     </section>
+    <!-- End of About Section -->
 
+    <!-- Start Of Contact-Me Section -->
     <section class="contact-me d-flex flex-column dark-grey-text">
       <h2 class="title upper">contact me</h2>
       <div class="star">
         <span class="line dark-grey-bg"></span>
-        <span class="icon"><img src="./styles/images/icons/icons8-star-64 (1).png"></span>
+        <span class="icon"
+          ><img src="./styles/images/icons/icons8-star-64 (1).png"
+        /></span>
         <span class="line dark-grey-bg"></span>
       </div>
       <form class="d-flex flex-column" action="#">
-        <input class="input" type="text" placeholder="Full name" />
-        <input class="input" type="text" placeholder="Email address" />
-        <input class="input" type="text" placeholder="Phone number" />
+        <input id='full-name'class="input" type="text" placeholder="Full name"  />
+        <input id="email" class="input" type="text" placeholder="Email address" />
+        <input id="phone-nb" class="input" type="text" placeholder="Phone number" />
         <textarea
+          id="message"
           class="input"
           rows="5"
           cols="10"
           placeholder="Message"
         ></textarea>
-        <button class="btn btn-small green-bg">Send</button>
+        <button type='submit' class="btn btn-small green-bg" id="contact-btn">Send</button>
+        <p id="error-box" class="d-flex d-none error-msg bold"></p>
       </form>
     </section>
+    <!-- End of Contact-me Section -->
 
+    <!-- Start of Footer -->
     <section class="footer dark-grey-bg d-flex">
       <div class="part d-flex flex-column">
         <h3 class="upper title bold">location</h3>
@@ -105,20 +142,68 @@
       <div class="part d-flex flex-column">
         <h3 class="upper title bold">around the web</h3>
         <ul class="icon-links">
-          <a href="#"><li><img src="./styles/images/icons/icons8-dribbble-52.png"></li></a>
-          <a href="#"><li><img src="./styles/images/icons/icons8-dribbble-52.png"></li></a>
-          <a href="#"><li><img src="./styles/images/icons/icons8-dribbble-52.png"></li></a>
-          <a href="#"><li><img src="./styles/images/icons/icons8-dribbble-52.png"></li></a>
+          <a href="#"
+            ><li><img src="./styles/images/icons/icons8-facebook-52.png" /></li
+          ></a>
+          <a href="#"
+            ><li>
+              <img
+                src="./styles/images/icons/icons8-linkedin-circled-52.png"
+              /></li
+          ></a>
+          <a href="#"
+            ><li>
+              <img
+                src="./styles/images/icons/icons8-twitter-circled-52.png"
+              /></li
+          ></a>
+          <a href="#"
+            ><li>
+              <img
+                src="./styles/images/icons/icons8-dribbble-an-online-community-for-showcasing-user-made-artwork.-52.png"
+              /></li
+          ></a>
         </ul>
       </div>
       <div class="part d-flex flex-column">
         <h3 class="upper title bold">about freelancer</h3>
-        <p class="text">Freelance is a free to use, MIT licensed Bootstrap theme created by <a href="#" class="link">Start Bootstrap.</a></p>
+        <p class="text">
+          Freelance is a free to use, MIT licensed Bootstrap theme created by
+          <a href="#" class="link">Start Bootstrap.</a>
+        </p>
       </div>
     </section>
+    <!-- End of Footer -->
 
     <footer class="copyright d-flex">
       <p>Copyright © Your Website 2022</p>
     </footer>
+
+    <!-- Modal/pop-up hidden until the user click on one of cards/image in the portfolio -->
+    <div id="modal" class="modal-portfolio d-none">
+      <div id="close-btn" class="close-btn">X</div>
+      <div class="content">
+      <h2 class="title upper">contact me</h2>
+      <div class="star">
+        <span class="line dark-grey-bg"></span>
+        <span class="icon"
+          ><img src="./styles/images/icons/icons8-star-64 (1).png"
+        /></span>
+        <span class="line dark-grey-bg"></span>
+      </div>
+          <img class="img" src="./styles/images/cabin.png" />
+        <p>
+          Freelancer is a free bootstrap theme created by Start Bootstrap. The
+          download includes the complete source files including HTML, CSS, and
+          JavaScript as well as optional SASS stylesheets for easy
+          customization.
+        </p>
+      <button class="btn outline green-bg">
+        <span class="icon">D</span>Free Download!
+      </button>
+      </div>
+    </div>
+    
+    <script src="js/app.js"></script>
   </body>
 </html>
