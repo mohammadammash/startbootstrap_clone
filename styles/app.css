@@ -174,9 +174,7 @@ li {
   z-index: 1;
   height:80%;
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
 .modal-portfolio .title{
   font-size: 30px;
@@ -194,7 +192,7 @@ li {
   justify-content: space-between;
   align-items: center;
   height: 90%;
-  width:80%;
+  padding: 0 15px;
   text-align: center;
 }
 .modal-portfolio .content > .img{
