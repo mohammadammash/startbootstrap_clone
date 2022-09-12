@@ -117,16 +117,17 @@
         <span class="line dark-grey-bg"></span>
       </div>
       <form class="d-flex flex-column" action="#">
-        <input class="input" type="text" placeholder="Full name" />
-        <input class="input" type="text" placeholder="Email address" />
-        <input class="input" type="text" placeholder="Phone number" />
+        <input id='full-name'class="input" type="text" placeholder="Full name"  />
+        <input id="email" class="input" type="text" placeholder="Email address" />
+        <input id="phone-nb" class="input" type="text" placeholder="Phone number" />
         <textarea
+          id="message"
           class="input"
           rows="5"
           cols="10"
           placeholder="Message"
         ></textarea>
-        <button class="btn btn-small green-bg">Send</button>
+        <button type='submit' class="btn btn-small green-bg" id="contact-btn">Send</button>
         <p class="d-flex d-none error-msg">ERROR</p>
       </form>
     </section>
