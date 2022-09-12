@@ -59,12 +59,21 @@ li {
 .btn{
     padding: 16px 28px;
     border-radius: 0.5rem;
+    font-size: 20px;
+    color: white;
 }
 .outline{
     border: none;
     border: 2px solid white;
-    font-size: 20px;
-    color: white;
+}
+.btn-small{
+    border: none;
+    width:103.39px;
+    height:66px;
+    opacity: 0.6;
+}
+.input::placeholder{
+    font-size: 1.5rem;
 }
 
 
@@ -153,4 +162,26 @@ li {
 .about .content > p{
     width:28%;
     line-height: 1.4em;
+}
+
+/* CONTACT */
+.contact-me{
+    border: 1px solid red;
+    min-height:750px;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+.contact-me > .title{
+    height: 5%;
+    font-size: 48px;
+}
+.contact-me > form{
+    width:700px;
+}
+.contact-me .input{
+    height: 88px;
+    border: none;
+    border-bottom: 1px solid #2c3e50;
+    margin-bottom: 15px;
 }
