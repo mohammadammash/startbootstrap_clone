@@ -216,11 +216,15 @@ li {
 }
 .contact-me .error-msg{
   margin: 10px 0;
-  background-color: rgb(161, 0, 0, 0.5);
+  padding: 10px 20px;
+  background-color: rgba(231, 0, 0, 0.792);
   border-radius: 5px;
   justify-content: center;
   align-items: center;
   height: 40px;
+  text-align: center;
+  line-height: 20px;
+  text-transform: capitalize;
 }
 
 /* MAIN FOOTER */
