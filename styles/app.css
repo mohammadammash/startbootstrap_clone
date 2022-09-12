@@ -163,6 +163,9 @@ li {
     width:28%;
     line-height: 1.4em;
 }
+.about .btn{
+    margin-bottom: 10px;
+}
 
 /* CONTACT */
 .contact-me{
@@ -184,4 +187,28 @@ li {
     border: none;
     border-bottom: 1px solid #2c3e50;
     margin-bottom: 15px;
+}
+
+/* MAIN FOOTER */
+.footer{
+    color: white;
+    height: 250px;
+    padding: 0 12%;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer > .part{
+    height: 50%;
+    justify-content: space-around;
+    text-align: center;
+    width:60%;
+}
+.footer > .part:nth-child(2){
+    width:70%;
+}
+.footer .title{
+    font-size: 22px;
+}
+.footer .text{
+    font-size: 20px;
 }
