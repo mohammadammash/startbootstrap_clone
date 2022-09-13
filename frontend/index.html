@@ -116,7 +116,7 @@
         /></span>
         <span class="line dark-grey-bg"></span>
       </div>
-      <form class="d-flex flex-column" action="#">
+      <div class="form d-flex flex-column" action="#">
         <input id='full-name'class="input" type="text" placeholder="Full name"  />
         <input id="email" class="input" type="text" placeholder="Email address" />
         <input id="phone-nb" class="input" type="text" placeholder="Phone number" />
@@ -127,9 +127,12 @@
           cols="10"
           placeholder="Message"
         ></textarea>
+        <div class="contact-buttons">
         <button type='submit' class="btn btn-small green-bg" id="contact-btn">Send</button>
+        <a href="inbox.html"><button type='submit' class="btn show-messages-btn green-bg" id="contact-btn">Show All Messages</button></a>
+        </div>
         <p id="error-box" class="d-flex d-none error-msg bold"></p>
-      </form>
+      </div>
     </section>
     <!-- End of Contact-me Section -->
 
