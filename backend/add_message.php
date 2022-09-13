@@ -12,7 +12,7 @@ $text = $_POST['message'];
 
 // run query in two steps to avoid taking queries to delete dbs
 $query = $mysqli->prepare("INSERT INTO messages(name, email, text, phone_nb) VALUE (?, ?, ?, ?)");
-$query->bind_param('sssi', $name, $email, $text, $phone_nb); //change to ?,? to strings vars
+$query->bind_param('ssss', $name, $email, $text, $phone_nb); //change to ?,? to strings vars
 $query->execute();
 
 $response = [];
