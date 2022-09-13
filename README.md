@@ -8,7 +8,7 @@ HTML, CSS, JS, PHP, SQL
 This project is made up of one page only, with proper layout and responsivity to match different screen sizes, in addition to interactivity with users(using JS)
 
 # Installation
--in your cmd: git clone https://github.com/mohammadammash/startbootstrap_clone_frontend
+-in your cmd: git clone https://github.com/mohammadammash/startbootstrap_clone
 -Start page to access: /frontend/index.html
 
 # Resources
