@@ -23,6 +23,22 @@ const showNav_desktop = () => {
 };
 
 // handle contact form submission(handleContactSubmit => have 3 nested functions to validate 4 contact-me fields and return values)
+// fetch data to api post request(backend/add_message.php)
+const add_message = async (full_name, email, message, phone_nb) => {
+  try {
+    const url =
+      "http://localhost/startbootstrap_clone_frontend/backend/add_message.php";
+    const response = await fetch(url, {
+      method: "POST",
+      body: new URLSearchParams({'name':full_name, 'email':email,'message':message,'phone_nb':phone_nb}),
+    });
+    const data = await response.json();
+    console.log(data);
+  } catch (err) {
+    console.log(err);
+  }
+};
+
 const validateEmail = (email) => {
   const regEx = /[a-z0-9_\.-]{3,}@[a-z0-9_\.-]{5,}/;
   return regEx.test(email);
@@ -65,6 +81,9 @@ const handleContactSubmit = (e) => {
   if (error_msg) {
     error_box.classList.remove("d-none");
     error_box.textContent = error_msg;
+  } else {
+    // if inputs contain valid data: Add message to message(table):
+    add_message(fullName, email, message, phoneNb);
   }
 };
 
@@ -79,4 +98,4 @@ for (let i = 0; i < cards.length; i++) {
   cards[i].addEventListener("click", showModal);
 }
 // close modal/pop-up when X(close-btn) clicked:
-closeCard_btn.addEventListener('click',closeModal);
+closeCard_btn.addEventListener("click", closeModal);

@@ -75,10 +75,12 @@ li {
   border: 2px solid white;
 }
 .btn-small {
+  opacity: 0.6;
   border: none;
   width: 103.39px;
   height: 66px;
   opacity: 0.6;
+  display: inline-block;
 }
 .input::placeholder {
   font-size: 1.5rem;
@@ -172,21 +174,21 @@ li {
   border: 3px solid #f1f1f1;
   background-color: white;
   z-index: 1;
-  height:80%;
+  height: 80%;
   border-radius: 10px;
   text-align: center;
 }
-.modal-portfolio .title{
+.modal-portfolio .title {
   font-size: 30px;
 }
-.modal-portfolio .close-btn{
+.modal-portfolio .close-btn {
   margin-top: 10px;
-  width:95%;
+  width: 95%;
   text-align: end;
   height: 5%;
   cursor: pointer;
 }
-.modal-portfolio .content{
+.modal-portfolio .content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -195,13 +197,13 @@ li {
   padding: 0 15px;
   text-align: center;
 }
-.modal-portfolio .content > .img{
-  width:80%;
+.modal-portfolio .content > .img {
+  width: 80%;
   height: 250px;
   border-radius: 10px;
   margin: 10px 0;
 }
-.modal-portfolio button{
+.modal-portfolio button {
   margin: 20px 0;
 }
 
@@ -244,7 +246,7 @@ li {
   height: 5%;
   font-size: 48px;
 }
-.contact-me > form {
+.contact-me  .form {
   max-width: 700px;
   width: 100%;
 }
@@ -266,6 +268,15 @@ li {
   text-align: center;
   line-height: 20px;
   text-transform: capitalize;
+}
+.contact-me .show-messages-btn {
+  height: 66px;
+  opacity: 0.6;
+  border: none;
+}
+.contact-me .contact-buttons {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* MAIN FOOTER */
@@ -299,8 +310,6 @@ li {
   align-items: center;
 }
 
-
-
 /* MEDIA QUERIES */
 @media only screen and (max-width: 1000px) {
   /* NAVBAR */
@@ -316,7 +325,7 @@ li {
   }
 
   /* CONTACT ME */
-  .contact-me form {
+  .contact-me .form {
     width: 80%;
   }
 
